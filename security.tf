@@ -1,0 +1,21 @@
+resource "aws-security_group" "mysg" {
+name = "Terraform -sg"
+description "This was created by terraform"
+ingress {
+protocol = "tcp"
+from_port = 22
+to_port = 22
+cidr_blocks = ["0.0.0.0/0"]
+}
+ingress {
+protocol = "tcp"
+from_port = 80
+to_port = 80
+cidr_blocks = ["0.0.0.0/0"]
+}
+ingress {
+protocol = "tcp"
+from_port = 8000
+to_port = 90000
+cidr_blocks = ["0.0.0.0/0"]
+}
