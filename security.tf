@@ -16,7 +16,7 @@ cidr_blocks = ["0.0.0.0/0"]
 ingress {
 protocol = "tcp"
 from_port = 8000
-to_port = 90000
+to_port = 9000
 cidr_blocks = ["0.0.0.0/0"]
 }
 egress {
