@@ -1,6 +1,6 @@
-resource "aws-security_group" "mysg" {
+resource "aws_security_group" "mysg" {
 name = "Terraform -sg"
-description "This was created by terraform"
+description = "This was created by terraform"
 ingress {
 protocol = "tcp"
 from_port = 22
